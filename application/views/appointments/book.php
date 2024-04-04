@@ -276,32 +276,48 @@
                                 <input type="text" id="phone-number" maxlength="60"
                                        class="<?= $require_phone_number === '1' ? 'required' : '' ?> form-control"/>
                             </div>
+                            <div class="form-group">
+                                <label for="sn-notebook" class="control-label">
+                                    Seriennummer Notebook
+                                    <span class="text-danger">*</span>
+                                </label>
+                                <input type="text" id="sn-notebook" class="required form-control" maxlength="120"/>
+                            </div>
                         </div>
 
                         <div class="col-12 col-md-6">
                             <div class="form-group">
-                                <label for="address" class="control-label">
-                                    <?= lang('address') ?>
+                                <label for="savis" class="control-label">
+                                    SAVIS-Kennung
                                 </label>
-                                <input type="text" id="address" class="form-control" maxlength="120"/>
+                                <input type="text" id="savis" class="form-control" maxlength="120"/>
                             </div>
                             <div class="form-group">
-                                <label for="city" class="control-label">
-                                    <?= lang('city') ?>
+                                <label for="dienststelle" class="control-label">
+                                    Dienststelle
+                                    <span class="text-danger">*</span>
                                 </label>
-                                <input type="text" id="city" class="form-control" maxlength="120"/>
+                                <input type="text" id="dienststelle" class="required form-control" maxlength="120"/>
                             </div>
                             <div class="form-group">
-                                <label for="zip-code" class="control-label">
-                                    <?= lang('zip_code') ?>
+                                <label for="computer" class="control-label">
+                                    Computername
+                                    <span class="text-danger">*</span>
                                 </label>
-                                <input type="text" id="zip-code" class="form-control" maxlength="120"/>
+                                <input type="text" id="computer" class="required form-control" maxlength="120"/>
                             </div>
                             <div class="form-group">
                                 <label for="notes" class="control-label">
                                     <?= lang('notes') ?>
                                 </label>
                                 <textarea id="notes" maxlength="500" class="form-control" rows="1"></textarea>
+                            </div>
+                            <div class="form-group">
+                                <label for="sn-dock" class="control-label">
+                                    Seriennummer Dock
+                                    <span class="text-danger">*</span>
+                                </label>
+                                <input type="text" id="sn-dock" class="required form-control" maxlength="120"/>
                             </div>
                         </div>
                     </div>
