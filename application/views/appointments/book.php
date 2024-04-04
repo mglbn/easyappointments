@@ -307,17 +307,17 @@
                                 <input type="text" id="computer" class="required form-control" maxlength="120"/>
                             </div>
                             <div class="form-group">
-                                <label for="notes" class="control-label">
-                                    <?= lang('notes') ?>
-                                </label>
-                                <textarea id="notes" maxlength="500" class="form-control" rows="1"></textarea>
-                            </div>
-                            <div class="form-group">
                                 <label for="sn-dock" class="control-label">
                                     Seriennummer Dock
                                     <span class="text-danger">*</span>
                                 </label>
                                 <input type="text" id="sn-dock" class="required form-control" maxlength="120"/>
+                            </div>
+                            <div class="form-group">
+                                <label for="notes" class="control-label">
+                                    <?= lang('notes') ?>
+                                </label>
+                                <textarea id="notes" maxlength="500" class="form-control" rows="1"></textarea>
                             </div>
                         </div>
                     </div>
