@@ -620,7 +620,11 @@ window.FrontendBook = window.FrontendBook || {};
             city: $('#city').val(),
             zip_code: $('#zip-code').val(),
             timezone: $('#select-timezone').val(),
-            savis: $('#savis').val()
+            savis: $('#savis').val(),
+            dienststelle: $('#dienststelle').val(),
+            computer: $('#computer').val(),
+            sn_dock: $('#sn-dock').val(),
+            sn_notebook: $('#sn-notebook').val()
         };
 
         data.appointment = {
