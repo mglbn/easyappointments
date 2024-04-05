@@ -584,7 +584,7 @@ window.FrontendBook = window.FrontendBook || {};
                         }),
                         $('<br/>'),
                         $('<span/>', {
-                            'text': dienststelle ? 'Dienststelle: ' + dienstelle : ''
+                            'text': dienststelle ? 'Dienststelle: ' + dienststelle : ''
                         }),
                         $('<br/>'),
                         $('<span/>', {
