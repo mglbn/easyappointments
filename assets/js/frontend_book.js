@@ -619,7 +619,8 @@ window.FrontendBook = window.FrontendBook || {};
             address: $('#address').val(),
             city: $('#city').val(),
             zip_code: $('#zip-code').val(),
-            timezone: $('#select-timezone').val()
+            timezone: $('#select-timezone').val(),
+            savis: $('#savis').val()
         };
 
         data.appointment = {
