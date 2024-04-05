@@ -594,6 +594,7 @@ window.FrontendBook = window.FrontendBook || {};
                         $('<span/>', {
                             'text': EALang.email + ': ' + email
                         }),
+                        $('<br/>'),
                         $('<span/>', {
                             'text': computer ? 'Computername: ' + computer : ''
                         }),
