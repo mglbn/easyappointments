@@ -43,13 +43,6 @@ class Customers_model extends EA_Model {
         // Validate the customer data before doing anything.
         $this->validate($customer);
 
-        // Check if a customer already exists (by email).
-        if ($this->exists($customer) && ! isset($customer['id']))
-        {
-            // Find the customer id from the database.
-            $customer['id'] = $this->find_record_id($customer);
-        }
-
         // Insert or update the customer record.
         if ( ! isset($customer['id']))
         {

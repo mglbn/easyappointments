@@ -549,11 +549,6 @@ class Appointments extends EA_Controller {
                 return;
             }
 
-            if ($this->customers_model->exists($customer))
-            {
-                $customer['id'] = $this->customers_model->find_record_id($customer);
-            }
-
             if (empty($appointment['location']) && ! empty($service['location']))
             {
                 $appointment['location'] = $service['location'];
