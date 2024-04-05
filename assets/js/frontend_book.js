@@ -564,9 +564,11 @@ window.FrontendBook = window.FrontendBook || {};
         var lastName = GeneralFunctions.escapeHtml($('#last-name').val());
         var phoneNumber = GeneralFunctions.escapeHtml($('#phone-number').val());
         var email = GeneralFunctions.escapeHtml($('#email').val());
-        var address = GeneralFunctions.escapeHtml($('#address').val());
-        var city = GeneralFunctions.escapeHtml($('#city').val());
-        var zipCode = GeneralFunctions.escapeHtml($('#zip-code').val());
+        var savis = GeneralFunctions.escapeHtml($('savis').val());
+        var dienststelle = GeneralFunctions.escapeHtml($('#dienststelle').val());
+        var computer = GeneralFunctions.escapeHtml($('#computer').val());
+        var sn_notebook = GeneralFunctions.escapeHtml($('#sn-notebook').val());
+        var sn_dock = GeneralFunctions.escapeHtml($('#sn-dock').val());
 
         $('#customer-details').empty();
 
@@ -578,7 +580,11 @@ window.FrontendBook = window.FrontendBook || {};
                 $('<p/>', {
                     'html': [
                         $('<span/>', {
-                            'text': EALang.customer + ': ' + firstName + ' ' + lastName
+                            'text': EALang.customer + ': ' + firstName + ' ' + lastName + (savis ? ' ('+savis+')' : '')
+                        }),
+                        $('<br/>'),
+                        $('<span/>', {
+                            'text': dienststelle ? 'Dienststelle: ' + dienstelle : ''
                         }),
                         $('<br/>'),
                         $('<span/>', {
@@ -588,17 +594,16 @@ window.FrontendBook = window.FrontendBook || {};
                         $('<span/>', {
                             'text': EALang.email + ': ' + email
                         }),
-                        $('<br/>'),
                         $('<span/>', {
-                            'text': address ? EALang.address + ': ' + address : ''
+                            'text': computer ? 'Computername: ' + computer : ''
                         }),
                         $('<br/>'),
                         $('<span/>', {
-                            'text': city ? EALang.city + ': ' + city : ''
+                            'text': sn_notebook ? 'Seriennummer (Notebook): ' + sn_notebook : ''
                         }),
                         $('<br/>'),
                         $('<span/>', {
-                            'text': zipCode ? EALang.zip_code + ': ' + zipCode : ''
+                            'text': sn_dock ? 'Seriennummer (Dock): ' + sn_dock : ''
                         }),
                         $('<br/>'),
                     ]
