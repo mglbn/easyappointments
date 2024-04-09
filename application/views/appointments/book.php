@@ -277,21 +277,14 @@
                                        class="<?= $require_phone_number === '1' ? 'required' : '' ?> form-control"/>
                             </div>
                             <div class="form-group">
-                                <label for="sn-notebook" class="control-label">
-                                    Seriennummer Notebook
-                                    <span class="text-danger">*</span>
-                                </label>
-                                <input type="text" id="sn-notebook" class="required form-control" maxlength="120"/>
-                            </div>
-                        </div>
-
-                        <div class="col-12 col-md-6">
-                            <div class="form-group">
                                 <label for="savis" class="control-label">
                                     SAVIS-Kennung
                                 </label>
                                 <input type="text" id="savis" class="form-control" maxlength="120"/>
                             </div>
+                        </div>
+
+                        <div class="col-12 col-md-6">
                             <div class="form-group">
                                 <label for="dienststelle" class="control-label">
                                     Dienststelle
@@ -305,6 +298,23 @@
                                     <span class="text-danger">*</span>
                                 </label>
                                 <input type="text" id="computer" class="required form-control" maxlength="120"/>
+                            </div>
+                            <div class="form-group">
+                                <label for="pool" class="control-label">
+                                    Geräteart
+                                    <span class="text-danger">*</span>
+                                </label>
+                                <select name="pool" id="pool">
+                                    <option value=0>Persönlich verausgabt (eigenes Gerät)</option>
+                                    <option value=1>Poolgerät (mehrere Nutzer)</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="sn-notebook" class="control-label">
+                                    Seriennummer Notebook
+                                    <span class="text-danger">*</span>
+                                </label>
+                                <input type="text" id="sn-notebook" class="required form-control" maxlength="120"/>
                             </div>
                             <div class="form-group">
                                 <label for="sn-dock" class="control-label">

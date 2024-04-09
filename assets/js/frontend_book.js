@@ -566,6 +566,7 @@ window.FrontendBook = window.FrontendBook || {};
         var email = GeneralFunctions.escapeHtml($('#email').val());
         var savis = GeneralFunctions.escapeHtml($('savis').val());
         var dienststelle = GeneralFunctions.escapeHtml($('#dienststelle').val());
+        var pool = GeneralFunctions.escapeHtml($('#pool').val());
         var computer = GeneralFunctions.escapeHtml($('#computer').val());
         var sn_notebook = GeneralFunctions.escapeHtml($('#sn-notebook').val());
         var sn_dock = GeneralFunctions.escapeHtml($('#sn-dock').val());
@@ -600,6 +601,10 @@ window.FrontendBook = window.FrontendBook || {};
                         }),
                         $('<br/>'),
                         $('<span/>', {
+                            'text': pool==1 ? 'Geräteart: Poolgerät' : 'Geräteart: Persönlich verausgabt'
+                        }),
+                        $('<br/>'),
+                        $('<span/>', {
                             'text': sn_notebook ? 'Seriennummer (Notebook): ' + sn_notebook : ''
                         }),
                         $('<br/>'),
@@ -630,7 +635,8 @@ window.FrontendBook = window.FrontendBook || {};
             dienststelle: $('#dienststelle').val(),
             computer: $('#computer').val(),
             sn_dock: $('#sn-dock').val(),
-            sn_notebook: $('#sn-notebook').val()
+            sn_notebook: $('#sn-notebook').val(),
+            pool: $('#pool').val()
         };
 
         data.appointment = {
